@@ -1,0 +1,40 @@
+nav {
+    height: auto;
+}
+
+.collection .collection-item.card:hover, .pagination li a:hover {
+    color: #039be5;
+}
+
+@media (min-width: 414px) {
+    body {
+        background-color: antiquewhite;
+    }
+
+    div#app {
+        width: 414px;
+        min-height: 736px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    div#progress {
+        width: 414px;
+        min-height: 736px; 
+        margin: 0 auto;
+        background-image: url(/img/1x1-cccccc7f.png);
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+    }
+
+    div#progress img {
+        display: block;
+        margin: 100px auto;
+    }
+
+    li.card {
+        cursor: pointer;
+    }
+}
