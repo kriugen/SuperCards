@@ -12,7 +12,8 @@ var requestFixed = request as SuperAgentParseFix
 export function getData(word: string): Promise<Card> {
     return new Promise((resolve, reject) => {
         word = word.toLowerCase()
-        var url = `http://dictionary.cambridge.org/dictionary/english/${word}`
+        const host = 'http://dictionary.cambridge.org'
+        const url = `${host}/dictionary/english/${word}`
         request
             .get(url)
             .then((r: any) => {
@@ -27,6 +28,9 @@ export function getData(word: string): Promise<Card> {
                     resolve(card)
                     return
                 }
+
+                if (audioUri[0] == '/')
+                    audioUri = `${host}/${audioUri}`
 
                 request
                     .get(audioUri)
