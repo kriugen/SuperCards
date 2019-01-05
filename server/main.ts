@@ -13,7 +13,7 @@ var app = express()
 
 app.use(cookieParser())
 app.use(session({
-    secret: '896ebb04-e71f-4fa1-adb8-3b3a9ac0e74c',
+    secret: config.secret,
     store: sessionStore,
     resave: false,
     saveUninitialized: false,

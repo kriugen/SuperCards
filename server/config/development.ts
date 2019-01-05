@@ -11,4 +11,5 @@ export default class Development extends Common implements IConfig {
 
     client = 'http://localhost:8080'
     port = 5000
+    secret = '14278a17-8772-4804-9f75-f06009e38141'
 }
