@@ -6,6 +6,7 @@ import { browserHistory } from 'react-router'
 import * as History from 'history'
 import { connect } from 'react-redux'
 import { routeChange } from './Common/actions'
+import Version from './Version'
 
 type ReactProps = {
     children: any,
@@ -30,13 +31,17 @@ export class App extends React.Component<Props> {
 
     render() {
         return (
-            <div>
+            <div style={{
+                        display: 'flex', 
+                        flexDirection: 'column',
+                        minHeight: '100vh'}}>
                 <Navigation />
                 <Progress />
                 <Error />
-                <div style={{ margin: 10 }}>
+                <div style={{ flex: 1, margin: 10 }}>
                     {this.props.children}
                 </div>
+                <Version />
             </div>
         )
     }
