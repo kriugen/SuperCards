@@ -1,5 +1,5 @@
 # Super Cards
-A language learning application that allows users to add word cards and fill them with text, visual and audio data.
+A language learning application that allows users to create word cards and fill them with text, visual and audio data.
 
 [Demo](https://shrouded-island-14882.herokuapp.com)
 
