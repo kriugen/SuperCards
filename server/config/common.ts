@@ -11,6 +11,7 @@ export interface IConfig {
     databaseConnection: IDbConnection,
     client: string,
     port: number,
+    secret: string,
 }
 
 export default class Common {
