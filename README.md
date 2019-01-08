@@ -5,4 +5,4 @@ A language learning application that allows users to create word cards and fill 
 
 [Instructional video ](https://www.youtube.com/watch?v=7vCFeunxRxk&feature=youtu.be)
 
-Technologies: Node.js, Express, React, Redux, Redux-Thunk, Typescript
+Technologies: Node.js, Express, React, Redux, Redux-Thunk, Typescript, MaterializeCss
